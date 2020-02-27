@@ -1,0 +1,107 @@
+#reviews_body {
+   width: 100%;
+   margin:0 0 10px 0;
+}
+
+/*Стиль кнопки*/
+.reviews_but_wrap { margin-top: 6px; text-align: center; }
+.wrap_review_button { float: right;  margin-top: 6px;}
+.reviewbut {
+	-moz-box-shadow:inset 0px 1px 0px 0px #cae3fc;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #cae3fc;
+	box-shadow:inset 0px 1px 0px 0px #cae3fc;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #79bbff), color-stop(1, #4197ee) );
+	background:-moz-linear-gradient( center top, #79bbff 5%, #4197ee 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#4197ee');
+	background-color:#79bbff;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:1px solid #469df5;
+	display:inline-block;
+	color:#ffffff;
+	font-family:arial;
+	font-size:12px;
+	font-weight:normal;
+	padding:3px 24px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #287ace;
+}
+.reviewbut:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #4197ee), color-stop(1, #79bbff) );
+	background:-moz-linear-gradient( center top, #4197ee 5%, #79bbff 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#4197ee', endColorstr='#79bbff');
+	background-color:#4197ee;
+        color:#ffffff;
+}
+.reviewbut:active {
+	position:relative;
+	top:1px;
+}
+/* /Стиль кнопки*/
+
+
+/* список отзывов */
+#reviews_item {
+    background: url("../images/quo.png") no-repeat scroll 10px 15px transparent;
+    overflow: hidden;
+    padding: 10px 10px 20px 65px;
+    margin:0 0 15px 0;
+    border: 1px solid #DDDDDD;
+    border-radius: 10px 10px 10px 10px;
+    display: block;
+    overflow: hidden;
+}
+
+#reviews_body .bg_dark {background-color: #f1f1f1;}
+#reviews_body .bg_light { background-color: #fff; }
+#reviews_item .reviews_mess{ font-style: italic; clear: both; color: #737373;}
+#reviews_item .reviews_author{ color:#25A8FA; text-align: left;}
+#reviews_item .reviews_date{ font-size:12px;color: #888; }
+#reviews_item .reference-dot { padding: 0 5px 0 3px;}
+
+/* панель управления отзвывом */
+.reviews_remote {
+    border: 1px solid #ddd;
+    border-radius: 8px 8px 8px 8px;
+    display: inline-block;
+    font-size: 12px;
+    padding: 5px 10px;
+    float:right;
+}
+.reviews_remote .no_public {color:red;}
+.reviews_remote .editlinks a {
+    color:#999;
+}
+.reviews_remote .editlinks a:hover {
+    color: #333;
+}
+
+/* форма добавления отзыва */
+#reviews_body .reviews_select{border: 1px solid #CCCCCC;  padding: 1px 0; width: 356px;}
+#add_table_review{width:500px;}
+#add_table_review td { padding: 0 0 5px;}
+#reviews_body .name_field_review{}
+#reviews_body .review_field { border: 1px solid #CCCCCC; padding:2px 2px;}
+#reviews_body .fullfield {width: 350px;}
+#reviews_body .novalid {color: red;font-size: 11px;}
+#reviews_body .novalidfield { border: 1px solid red !important;}
+#reviews_body .callstar {
+    color: red;
+    font-family: Tahoma;
+    font-size: 13px;
+    font-style: normal;
+    padding: 0 3px;
+}
+
+/* Модуль последние отзывы */
+#mod_reviews_body{margin:0 0 5px 0;}
+#mod_reviews_body .mod_review_entry{padding: 8px 0; border-bottom: 1px dotted #E6E6E6;}
+#mod_reviews_body .mod_review_mess{font-style:italic;}
+#mod_reviews_body .mod_review_author{color: #25A8FA;}
+#mod_reviews_body .mod_review_date {color: #888888; font-size: 12px;}
+.mod_reviews_all {
+    background: url("../images/icons/comments.png") no-repeat scroll 0 0 transparent;
+    color: #333333;
+    padding: 1px 1px 1px 20px;
+}

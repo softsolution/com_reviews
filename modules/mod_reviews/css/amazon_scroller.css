@@ -1,0 +1,92 @@
+.amazon_scroller{
+    padding: 0px;
+    margin: 0px;
+}
+.amazon_scroller .amazon_scroller_nav{
+    position: absolute;
+}
+.amazon_scroller .amazon_scroller_nav li{
+    cursor: pointer;
+    position: absolute;
+}
+.amazon_scroller .amazon_scroller_mask{
+    position: absolute;
+    margin-left: 20px;
+    margin-right: 20px;
+    overflow: hidden;
+}
+.amazon_scroller ul{
+    padding: 0px;
+    margin: 0px;
+    float: left;
+}
+.amazon_scroller ul li{
+    padding: 0px;
+    margin: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+    list-style: none;
+    float: left;
+    display:inline;
+}
+.amazon_scroller ul li a{
+    text-decoration: none;
+}
+.amazon_scroller ul li a amazon_scroller_title{
+	overflow:hidden;
+}
+.amazon_scroller ul li a:hover{
+    text-decoration: underline;
+}
+.amazon_scroller ul li a img{
+    border: none;
+}
+
+.amazon_scroller .image{position: relative;}
+.amazon_scroller .title{height:25px;position:absolute;bottom: 0;width:100%;background-color: #000;opacity: 0.5;color:#fff;}
+.mod_review_date{
+    color: #A8A8A8;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.mod_reviews_image{
+    float:left;margin:0 10px 20px 0;
+    background:#FFF;
+
+}
+.mod_reviews_entry{clear:both;}
+
+
+/* arrows */
+.scroller-nav-left, .scroller-nav-right {
+    display: block;
+    height: 21px;
+    position: absolute;
+    top: 50px;
+    width: 15px;
+    z-index: 999;
+}
+
+.scroller-nav-left{ left: 1px; }
+.scroller-nav-right { right: 1px; }
+
+.scroller-nav-left a, .scroller-nav-right a {
+    background: url("../images/carousel_control.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    font-size: 1px;
+    height: 21px;
+    text-decoration: none;
+    text-indent: -999em;
+    width: 15px;
+}
+
+.scroller-nav-left a {background-position: 0 0;}
+.scroller-nav-right a {background-position: -18px 0;}
+.scroller-nav-left:hover {left: -1px;}
+.scroller-nav-right:hover {right: 0;}
+
+.mod_review_author{font-style: italic;}

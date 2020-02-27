@@ -1,0 +1,69 @@
+.coda-slider-wrapper {padding: 0;position:relative}
+.coda-slider { background: #fff }
+.coda-slider div.tab-nav {display: none;}
+.coda-slider, .coda-slider .panel { width: 255px } 
+.coda-slider-wrapper.arrows .coda-slider, .coda-slider-wrapper.arrows .coda-slider .panel { width: 255px }
+
+/* Use this to keep the slider content contained in a box even when JavaScript is disabled */
+.coda-slider-no-js .coda-slider { height: 200px; overflow: auto !important; padding-right: 20px }
+
+.coda-slider-wrapper.arrows .coda-slider { margin: 0 10px }
+	
+/* Panel padding */
+.coda-slider .panel-wrapper {
+    padding: 0;
+}
+
+/* Preloader */
+.coda-slider p.loading { padding: 20px; text-align: center }
+
+/* Don't change anything below here unless you know what you're doing */
+
+/* Tabbed nav */
+.coda-nav {}
+.coda-nav ul li a.current { background-position: 0 -16px;}
+.coda-nav ul { clear: both; display: block; margin: auto; overflow: hidden }
+.coda-nav ul li { display: inline }
+.coda-nav ul li a {
+background: url("../images/navigator.png") no-repeat scroll 0 0 transparent;
+display: block;
+float: left;
+font-size: 1px;
+height: 8px;
+margin: 3px;
+width: 8px;
+text-decoration: none
+}
+.coda-nav ul li a:hover {
+    background-position: 0 -8px;
+}
+
+/* Miscellaneous */
+.coda-slider-wrapper { clear: both; overflow: auto }
+.coda-slider { float: left; overflow: hidden; position: relative;margin: 15px 0;}
+.coda-slider .panel { display: block; float: left }
+.coda-slider .panel-container { position: relative; }
+
+.coda-nav-left, .coda-nav-right {
+    position: absolute;
+    z-index: 999;
+    top: 80px;
+    height: 21px;
+    width: 15px;
+    display: block;
+}
+.coda-nav-left{ left: 1px; }
+.coda-nav-right { right: 1px; }
+.coda-nav-left a, .coda-nav-right a {
+    display: block;
+    font-size: 1px;
+    text-indent: -999em;
+    background: url("../images/carousel_control.png") no-repeat scroll 0 0 transparent;
+    height: 21px;
+    width: 15px;
+    text-decoration: none;
+}
+.coda-nav-left a{background-position: 0 0;}
+.coda-nav-right a {background-position: -18px 0;}
+.coda-nav-left:hover {left:-1px;}
+.coda-nav-right:hover {right: 0px;}

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<backend>
+    <module>
+        <id>mod_reviews</id>
+        <title>Последние отзывы</title>
+    </module>
+    <params>
+        <param type="number" name="count" title="Количество отзывов" units="шт." default="5" />
+        <param type="list_db" name="category_id" title="Отзывы из категории" src="cms_reviews_cats" src_title="title" src_value="id">
+            <option title="-- Все категории --" value="-1" />
+        </param>
+        <param type="list" name="view_type" title="Вид">
+            <option title="Список" value="list" />
+            <option title="Список со стрелками и фото" value="thumbs" />
+            <option title="Слайдер coda-slider" value="slider" />
+            <option title="Amazon-scroller" value="scroller" />
+        </param>
+        <param type="flag" name="autoSlide" title="Автосмена слайдов" hint="Настройка coda-slider" default="on" />
+        <param type="number" name="SlideInterval" title="Интервал смены слайдов" hint="В миллисекундах. 1 сек = 1000 мс. Настройка слайдера + скроллера" units="мс" default="5000" />
+        <param type="list" name="nav" title="Навигация слайдера" hint="Настройка coda-slider">
+            <option title="Скрыть" value="hide" />
+            <option title="Сверху" value="top" />
+            <option title="Снизу" value="bottom" />
+        </param>
+        <param type="flag" name="autoHeight" title="Автоподбор высоты" hint="Настройка coda-slider" default="on" />
+        <param type="list" name="effect" title="Эффект смены слайдера" hint="Настройка coda-slider">
+            <option title="По умолчанию" value="default" />
+            <option title="easeInSine" value="easeInSine" />
+            <option title="easeOutSine" value="easeOutSine" />
+            <option title="easeInOutSine" value="easeInOutSine" />
+            <option title="easeInQuad" value="easeInQuad" />
+            <option title="easeOutQuad" value="easeOutQuad" />
+            <option title="easeInOutQuad" value="easeInOutQuad" />
+            <option title="easeInCubic" value="easeInCubic" />
+            <option title="easeOutCubic" value="easeOutCubic" />
+            <option title="easeInOutCubic" value="easeInOutCubic" />
+            <option title="easeInQuart" value="easeInQuart" />
+            <option title="easeOutQuart" value="easeOutQuart" />
+            <option title="easeInOutQuart" value="easeInOutQuart" />
+            <option title="easeInQuint" value="easeInQuint" />
+            <option title="easeOutQuint" value="easeOutQuint" />
+            <option title="easeInOutQuint" value="easeInOutQuint" />
+            <option title="easeInExpo" value="easeInExpo" />
+            <option title="easeOutExpo" value="easeOutExpo" />
+            <option title="easeInOutExpo" value="easeInOutExpo" />
+            <option title="easeInCirc" value="easeInCirc" />
+            <option title="easeOutCirc" value="easeOutCirc" />
+            <option title="easeInOutCirc" value="easeInOutCirc" />
+            <option title="easeInBack" value="easeInBack" />
+            <option title="easeOutBack" value="easeOutBack" />
+            <option title="easeInOutBack" value="easeInOutBack" />
+            <option title="easeInElastic" value="easeInElastic" />
+            <option title="easeOutElastic" value="easeOutElastic" />
+            <option title="easeInOutElastic" value="easeInOutElastic" />
+            <option title="easeInBounce" value="easeInBounce" />
+            <option title="easeOutBounce" value="easeOutBounce" />
+            <option title="easeInOutBounce" value="easeInOutBounce" />
+        </param>
+        <param type="flag" name="arrow" title="Стрелки в слайдере" hint="Настройка coda-slider" default="off" />
+        <param type="flag" name="showlink" title="Показвать ссылку Все отзывы" default="on" />
+        <param type="flag" name="showdate" title="Показвать дату добавления" default="on" />
+        <param type="number" name="maxlen" title="Обрезать отзывы длиннее" units="символов" hint="Если 0 - будет показан весь отзыв" />
+	<param type="flag" name="is_pag" title="Использовать пагинацию" default="on" />
+        <param type="number" name="scroller_show_count" title="Количество слайдов в скроллере" hint="Настройка Amazon-scroller" units="шт" default="2" />
+        <param type="number" name="scroller_slide_width" title="Ширина слайда" hint="Настройка Amazon-scroller" units="px" default="120" />
+        <param type="number" name="scroller_slide_height" title="Высота слайда" hint="Настройка Amazon-scroller" units="px" default="120" />
+    </params>
+</backend>

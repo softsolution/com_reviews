@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<backend>
+    <module>
+        <id>mod_reviews_random</id>
+        <title>Случайный отзыв</title>
+    </module>
+    <params>
+        <param type="number" name="reviewscount" title="Количество отзывов" units="шт." default="1" />
+        <param type="number" name="maxlen" title="Обрезать отзывы длиннее" units="символов" default="0" hint="0 или пустое значение - без ограничений" />
+	<param type="flag" name="showlink" title="Показывать ссылку на все отзывы" default="on" />
+    </params>
+</backend>
